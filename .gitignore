@@ -1,0 +1,9 @@
+node_modules/
+client/node_modules/
+.env
+dist/
+data/*.db
+data/*.db-journal
+.DS_Store
+coverage/
+.vscode/

@@ -1,0 +1,406 @@
+{"timestamp":"2026-01-17T07:11:19.056Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T07:11:19.063Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T07:13:00.915Z","level":"WARN","message":"SIGINT received, shutting down..."}
+{"timestamp":"2026-01-17T07:13:00.915Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T07:33:31.325Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T07:33:31.332Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T07:36:28.094Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T07:37:40.182Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T07:37:40.187Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T07:48:15.614Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T07:48:15.614Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T07:50:05.564Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T07:50:05.569Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T07:52:37.309Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T07:52:37.310Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T08:04:46.780Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T08:04:46.786Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T08:09:29.347Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T08:09:29.353Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T08:10:23.955Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T08:10:23.956Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T08:11:57.352Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T08:11:57.358Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T08:12:47.188Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T08:12:47.188Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T08:19:49.495Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T08:19:49.503Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T08:20:01.589Z","level":"INFO","message":"GET /api/ping","status":200,"duration":"3ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:26:39.716Z","level":"INFO","message":"GET /api/ping","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:26:39.825Z","level":"INFO","message":"GET /favicon.ico","status":200,"duration":"3ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:27:06.667Z","level":"INFO","message":"GET /api/ping","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:27:06.794Z","level":"INFO","message":"GET /favicon.ico","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:27:57.315Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:27:57.324Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:30:18.408Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:30:18.419Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T08:31:15.851Z","level":"ERROR","message":"Cannot read properties of undefined (reading 'id')","stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/fitzz/work/TalkLink/server/routes/auth.js:30:20\n    at Statement.<anonymous> (/home/fitzz/work/TalkLink/server/db.js:163:5)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)"}
+{"timestamp":"2026-01-17T09:13:47.475Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T09:13:47.481Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T09:14:15.151Z","level":"INFO","message":"GET /","status":200,"duration":"3ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:14:15.156Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:14:41.628Z","level":"INFO","message":"POST /setup","status":400,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:15:26.456Z","level":"ERROR","message":"Cannot read properties of undefined (reading 'id')","stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/fitzz/work/TalkLink/server/routes/auth.js:30:20\n    at Statement.<anonymous> (/home/fitzz/work/TalkLink/server/db.js:163:5)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)"}
+{"timestamp":"2026-01-17T09:38:38.155Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T09:38:38.164Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T09:38:58.347Z","level":"INFO","message":"GET /api/ping","status":304,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:38:58.449Z","level":"INFO","message":"GET /favicon.ico","status":304,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:40:36.037Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:40:36.046Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:41:15.913Z","level":"INFO","message":"POST /setup","status":200,"duration":"54ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:41:15.924Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:41:50.072Z","level":"INFO","message":"POST /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:42:14.699Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:43:08.569Z","level":"INFO","message":"POST /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:43:23.797Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:43:24.036Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:43:24.058Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:43:24.365Z","level":"DEBUG","message":"Socket connected","socketId":"0mn24eFyxxtMwlb5AAAB"}
+{"timestamp":"2026-01-17T09:45:17.986Z","level":"DEBUG","message":"Socket connected","socketId":"gK3c0tJSaifg9qDPAAAD"}
+{"timestamp":"2026-01-17T09:45:18.552Z","level":"DEBUG","message":"Socket connected","socketId":"Epg5cNXd9_oIHN2nAAAF"}
+{"timestamp":"2026-01-17T09:45:24.339Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:25.241Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:29.288Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:29.992Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:30.528Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:30.713Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:33.087Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:33.358Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:33.369Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:33.672Z","level":"DEBUG","message":"Socket connected","socketId":"IdHEKD2wVFOdSNNqAAAH"}
+{"timestamp":"2026-01-17T09:45:35.223Z","level":"DEBUG","message":"Socket connected","socketId":"3COvWDcVSCUjrLCSAAAJ"}
+{"timestamp":"2026-01-17T09:45:40.404Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:40.414Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:40.424Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:40.724Z","level":"DEBUG","message":"Socket connected","socketId":"I1S8s3bpsWGvfrxzAAAL"}
+{"timestamp":"2026-01-17T09:45:42.462Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:42.472Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:42.482Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T09:45:42.781Z","level":"DEBUG","message":"Socket connected","socketId":"pZ_upJt4hnHMBfdbAAAN"}
+{"timestamp":"2026-01-17T10:17:09.672Z","level":"INFO","message":"GET /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:17:09.679Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:19:21.176Z","level":"INFO","message":"POST /setup","status":400,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:19:59.069Z","level":"INFO","message":"POST /setup","status":200,"duration":"46ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:19:59.383Z","level":"INFO","message":"GET /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:19:59.695Z","level":"DEBUG","message":"Socket connected","socketId":"wP-SgFHZof_hU-1MAAAP"}
+{"timestamp":"2026-01-17T10:24:54.124Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:24:54.134Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:24:54.280Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:24:54.616Z","level":"DEBUG","message":"Socket connected","socketId":"AQ0QBqRaJ1OaLZD_AAAR"}
+{"timestamp":"2026-01-17T10:26:55.342Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:26:55.352Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:26:55.491Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:26:55.828Z","level":"DEBUG","message":"Socket connected","socketId":"nYjCImN_4zw2eK87AAAT"}
+{"timestamp":"2026-01-17T10:28:29.070Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:28:29.080Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:28:29.214Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:28:29.554Z","level":"DEBUG","message":"Socket connected","socketId":"btCCWYVh0J3FypnuAAAV"}
+{"timestamp":"2026-01-17T10:29:21.017Z","level":"INFO","message":"POST /setup","status":200,"duration":"44ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:29:21.026Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:29:21.347Z","level":"DEBUG","message":"Socket connected","socketId":"lHvpP56DWjA5M-50AAAX"}
+{"timestamp":"2026-01-17T10:29:45.143Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:29:58.392Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:30:05.523Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:30:17.210Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:30:17.356Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:30:17.383Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:30:17.693Z","level":"DEBUG","message":"Socket connected","socketId":"xM51bmCMWE5DMIMFAAAZ"}
+{"timestamp":"2026-01-17T10:30:23.774Z","level":"DEBUG","message":"Socket connected","socketId":"P-pTJxl3bavYdSUVAAAb"}
+{"timestamp":"2026-01-17T10:30:51.106Z","level":"DEBUG","message":"Socket connected","socketId":"NjunXJdAy-DVLx8jAAAd"}
+{"timestamp":"2026-01-17T10:30:59.178Z","level":"DEBUG","message":"Socket connected","socketId":"e5ce7LY8O-1d_za8AAAf"}
+{"timestamp":"2026-01-17T10:31:06.003Z","level":"DEBUG","message":"Socket connected","socketId":"XI4BajQGTF9y8cFuAAAh"}
+{"timestamp":"2026-01-17T10:31:14.199Z","level":"DEBUG","message":"Socket connected","socketId":"JlGpqkSgELWAvrX5AAAj"}
+{"timestamp":"2026-01-17T10:31:20.891Z","level":"DEBUG","message":"Socket connected","socketId":"xxA0GWktuZthxJDwAAAl"}
+{"timestamp":"2026-01-17T10:31:27.110Z","level":"DEBUG","message":"Socket connected","socketId":"hKk14yz7DQWatl1eAAAn"}
+{"timestamp":"2026-01-17T10:32:33.333Z","level":"INFO","message":"POST /setup","status":200,"duration":"45ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:32:33.551Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:32:33.648Z","level":"DEBUG","message":"Socket connected","socketId":"p7sWbdoMgkAE9M4hAAAp"}
+{"timestamp":"2026-01-17T10:32:42.608Z","level":"DEBUG","message":"Socket connected","socketId":"9ckiRClMMcmWA6oPAAAr"}
+{"timestamp":"2026-01-17T10:32:50.897Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:32:51.044Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:32:51.076Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:32:51.420Z","level":"DEBUG","message":"Socket connected","socketId":"SgTef9jpNhHtH0yOAAAt"}
+{"timestamp":"2026-01-17T10:33:01.511Z","level":"DEBUG","message":"Socket connected","socketId":"ATBDlQjDkMIz8UBRAAAv"}
+{"timestamp":"2026-01-17T10:33:18.528Z","level":"DEBUG","message":"Socket connected","socketId":"3-_LD02XQxyfOq7cAAAx"}
+{"timestamp":"2026-01-17T10:33:35.585Z","level":"DEBUG","message":"Socket connected","socketId":"Xx32Zsbg-GgHPQb4AAAz"}
+{"timestamp":"2026-01-17T10:38:33.579Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:38:33.589Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:38:33.729Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:38:34.068Z","level":"DEBUG","message":"Socket connected","socketId":"PUF7nZPAXRo3NqeFAAA1"}
+{"timestamp":"2026-01-17T10:38:43.859Z","level":"DEBUG","message":"Socket connected","socketId":"vi-axjU1hm60__P8AAA3"}
+{"timestamp":"2026-01-17T10:45:38.431Z","level":"DEBUG","message":"Socket connected","socketId":"cPN_aeVzWWGygdclAAA5"}
+{"timestamp":"2026-01-17T10:47:15.762Z","level":"DEBUG","message":"Socket connected","socketId":"8DLwVeP3NEk3zCbjAAA7"}
+{"timestamp":"2026-01-17T10:48:25.020Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:48:25.209Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:49:16.967Z","level":"INFO","message":"POST /login","status":200,"duration":"45ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:49:16.976Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T10:49:17.304Z","level":"DEBUG","message":"Socket connected","socketId":"kb02piXWROWmmf_2AAA9"}
+{"timestamp":"2026-01-17T10:57:48.860Z","level":"DEBUG","message":"Socket connected","socketId":"NSBz7sdDwtDt-1ohAAA_"}
+{"timestamp":"2026-01-17T10:58:26.084Z","level":"DEBUG","message":"Socket connected","socketId":"7peZ2ZbIeTRY9D0pAABB"}
+{"timestamp":"2026-01-17T11:24:54.597Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:24:54.790Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:24:54.821Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:24:55.154Z","level":"DEBUG","message":"Socket connected","socketId":"d7tCETmDivt1_nV9AABD"}
+{"timestamp":"2026-01-17T11:25:14.541Z","level":"DEBUG","message":"Socket connected","socketId":"YkElTotmLjGdSZNSAABF"}
+{"timestamp":"2026-01-17T11:26:41.492Z","level":"INFO","message":"POST /login","status":200,"duration":"44ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:26:41.703Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:26:41.810Z","level":"DEBUG","message":"Socket connected","socketId":"4hUR8x7JdqxHfYNdAABH"}
+{"timestamp":"2026-01-17T11:30:41.733Z","level":"INFO","message":"GET /api/ping","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:31:04.280Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:31:04.359Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:31:28.427Z","level":"INFO","message":"POST /login","status":200,"duration":"43ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:31:28.444Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:31:28.769Z","level":"DEBUG","message":"Socket connected","socketId":"dRR1UMpQeJxF2EZ-AABJ"}
+{"timestamp":"2026-01-17T11:31:34.847Z","level":"DEBUG","message":"Socket connected","socketId":"XDMgSr5USpVO9_x3AABL"}
+{"timestamp":"2026-01-17T11:31:41.175Z","level":"DEBUG","message":"Socket connected","socketId":"fnfk-PlgeOWhjFxXAABN"}
+{"timestamp":"2026-01-17T11:32:14.013Z","level":"DEBUG","message":"Socket connected","socketId":"N5asiivMlSHpLSCSAABP"}
+{"timestamp":"2026-01-17T11:32:58.099Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:32:58.147Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:32:58.207Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:32:58.497Z","level":"DEBUG","message":"Socket connected","socketId":"eBWYdxzNhUINIWSdAABR"}
+{"timestamp":"2026-01-17T11:33:18.548Z","level":"DEBUG","message":"Socket connected","socketId":"jJiKHkSPCNs7DKPlAABT"}
+{"timestamp":"2026-01-17T11:33:26.823Z","level":"DEBUG","message":"Socket connected","socketId":"XMDrS5gOIwTZKaGjAABV"}
+{"timestamp":"2026-01-17T11:33:48.808Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:35:01.471Z","level":"INFO","message":"POST /login","status":200,"duration":"43ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:35:01.476Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:35:01.784Z","level":"DEBUG","message":"Socket connected","socketId":"Do0c8qIu5zkbxfHZAABX"}
+{"timestamp":"2026-01-17T11:35:11.484Z","level":"DEBUG","message":"Socket connected","socketId":"Bf8voXtYknRxh1PXAABZ"}
+{"timestamp":"2026-01-17T11:35:22.361Z","level":"DEBUG","message":"Socket connected","socketId":"vvPC39fGAzdYeyn1AABb"}
+{"timestamp":"2026-01-17T11:36:10.227Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:36:10.273Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:36:10.332Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:36:10.626Z","level":"DEBUG","message":"Socket connected","socketId":"FMpUGM2lXkbjwAgEAABd"}
+{"timestamp":"2026-01-17T11:37:22.760Z","level":"INFO","message":"POST /login","status":200,"duration":"44ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:37:22.777Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:37:23.086Z","level":"DEBUG","message":"Socket connected","socketId":"xC3XR0Y6yqC7od_cAABf"}
+{"timestamp":"2026-01-17T11:38:27.761Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:38:27.808Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:38:27.869Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:38:28.167Z","level":"DEBUG","message":"Socket connected","socketId":"1VhUubzsI8vBwEuxAABh"}
+{"timestamp":"2026-01-17T11:41:42.062Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:41:42.072Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:42:09.487Z","level":"INFO","message":"POST /login","status":401,"duration":"44ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:42:32.977Z","level":"INFO","message":"POST /setup","status":400,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:43:00.400Z","level":"INFO","message":"POST /login","status":401,"duration":"43ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:43:51.716Z","level":"INFO","message":"POST /setup","status":200,"duration":"46ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:43:52.049Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T11:43:52.381Z","level":"DEBUG","message":"Socket connected","socketId":"Q5_uhd7bmO6T8fpcAABj"}
+{"timestamp":"2026-01-17T11:44:05.868Z","level":"DEBUG","message":"Socket connected","socketId":"2-MPEuKQwOVPasivAABl"}
+{"timestamp":"2026-01-17T11:44:14.409Z","level":"DEBUG","message":"Socket connected","socketId":"7pVS3bjvTTCm2_oRAABn"}
+{"timestamp":"2026-01-17T12:15:50.983Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T12:15:50.989Z","level":"ERROR","message":"listen EADDRINUSE: address already in use 0.0.0.0:3000","stack":"Error: listen EADDRINUSE: address already in use 0.0.0.0:3000\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at node:net:2206:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"}
+{"timestamp":"2026-01-17T12:20:37.361Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:20:37.371Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:20:37.381Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:20:37.416Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:29.922Z","level":"INFO","message":"POST /setup","status":200,"duration":"50ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:29.942Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:30.264Z","level":"DEBUG","message":"Socket connected","socketId":"0wOWD66IKBrkLEdAAABp"}
+{"timestamp":"2026-01-17T12:21:42.510Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:42.520Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:42.749Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:21:42.849Z","level":"DEBUG","message":"Socket connected","socketId":"3lrZ4Bcv-cFK4QPHAABr"}
+{"timestamp":"2026-01-17T12:22:01.940Z","level":"INFO","message":"POST /api/assistant/search","status":404,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:22:04.556Z","level":"INFO","message":"POST /api/assistant/search","status":404,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:22:08.737Z","level":"DEBUG","message":"Socket connected","socketId":"C2yuxQi-04F7RYnDAABt"}
+{"timestamp":"2026-01-17T12:22:54.515Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:22:54.526Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:22:54.753Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:22:54.846Z","level":"DEBUG","message":"Socket connected","socketId":"qgg0IjWV1YEjw3RIAABv"}
+{"timestamp":"2026-01-17T12:28:00.334Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:00.344Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:00.538Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:00.636Z","level":"DEBUG","message":"Socket connected","socketId":"O1sydCZwFJVUNilOAABx"}
+{"timestamp":"2026-01-17T12:28:40.535Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:40.546Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:40.556Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:40.866Z","level":"DEBUG","message":"Socket connected","socketId":"iQCZ7VN6tN099I85AABz"}
+{"timestamp":"2026-01-17T12:28:41.313Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:41.324Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:41.334Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:41.640Z","level":"DEBUG","message":"Socket connected","socketId":"1-AP2toDW3sxPzCIAAB1"}
+{"timestamp":"2026-01-17T12:28:41.711Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:41.712Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:41.723Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.028Z","level":"DEBUG","message":"Socket connected","socketId":"HsKCrX78-huoh-wMAAB3"}
+{"timestamp":"2026-01-17T12:28:42.059Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.070Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.079Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.392Z","level":"DEBUG","message":"Socket connected","socketId":"iHRUG9eDlmHz6XXcAAB5"}
+{"timestamp":"2026-01-17T12:28:42.450Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.451Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.461Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.779Z","level":"DEBUG","message":"Socket connected","socketId":"pdttjjbo-0rXwXCDAAB7"}
+{"timestamp":"2026-01-17T12:28:42.831Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.841Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:42.851Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:43.189Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:43.190Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:43.200Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:43.505Z","level":"DEBUG","message":"Socket connected","socketId":"BoBr5SFhShVG5qZAAAB-"}
+{"timestamp":"2026-01-17T12:28:48.719Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:48.729Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:48.739Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:49.049Z","level":"DEBUG","message":"Socket connected","socketId":"NNAnS23eSMgMh7DcAACA"}
+{"timestamp":"2026-01-17T12:28:49.908Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:49.919Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:49.929Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:50.245Z","level":"DEBUG","message":"Socket connected","socketId":"fMUxQI9Shko2DdWLAACC"}
+{"timestamp":"2026-01-17T12:28:50.780Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:50.790Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:50.800Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:51.101Z","level":"DEBUG","message":"Socket connected","socketId":"4DAOeSjGCWGCQoTVAACE"}
+{"timestamp":"2026-01-17T12:28:51.539Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:51.550Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:51.560Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T12:28:51.874Z","level":"DEBUG","message":"Socket connected","socketId":"At5ABgt2GUt2VLzdAACG"}
+{"timestamp":"2026-01-17T12:30:33.584Z","level":"WARN","message":"SIGTERM received, shutting down..."}
+{"timestamp":"2026-01-17T12:31:46.994Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T15:36:12.002Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T15:36:12.009Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T15:36:18.373Z","level":"WARN","message":"SIGINT received, shutting down..."}
+{"timestamp":"2026-01-17T15:36:18.373Z","level":"INFO","message":"Server closed"}
+{"timestamp":"2026-01-17T15:36:22.338Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T15:36:22.344Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T15:37:25.362Z","level":"INFO","message":"GET /","status":304,"duration":"3ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:37:25.365Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:37:25.572Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:37:25.693Z","level":"DEBUG","message":"Socket connected","socketId":"ZZbxR59UZGYlnDVcAAAB"}
+{"timestamp":"2026-01-17T15:37:31.773Z","level":"ERROR","message":"Cannot set properties of undefined (setting 'nickname')","stack":"TypeError: Cannot set properties of undefined (setting 'nickname')\n    at /home/fitzz/work/TalkLink/server/socket/chatHandler.js:188:28\n    at Statement.<anonymous> (/home/fitzz/work/TalkLink/server/db.js:289:9)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)"}
+{"timestamp":"2026-01-17T15:54:21.221Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-17T15:54:21.227Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-17T15:54:27.804Z","level":"INFO","message":"GET /","status":200,"duration":"3ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:54:27.810Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:54:27.841Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:54:28.178Z","level":"DEBUG","message":"Socket connected","socketId":"xFB7g9AaSKn8mn3iAAAB"}
+{"timestamp":"2026-01-17T15:54:33.267Z","level":"DEBUG","message":"Socket connected","socketId":"uPAk5zVT34Kb_oK-AAAD"}
+{"timestamp":"2026-01-17T15:54:35.213Z","level":"DEBUG","message":"Socket connected","socketId":"Ms8q2HWmJvB4QvL-AAAF"}
+{"timestamp":"2026-01-17T15:56:58.432Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:56:58.442Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:56:58.634Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:56:58.958Z","level":"DEBUG","message":"Socket connected","socketId":"hgHYak3l5aJqFUQRAAAH"}
+{"timestamp":"2026-01-17T15:57:14.980Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:14.990Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:15.034Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:15.369Z","level":"DEBUG","message":"Socket connected","socketId":"Ya0Hn1HoZGuayVqIAAAJ"}
+{"timestamp":"2026-01-17T15:57:17.129Z","level":"DEBUG","message":"Socket connected","socketId":"4BlNntol9uBhCC-wAAAL"}
+{"timestamp":"2026-01-17T15:57:18.158Z","level":"DEBUG","message":"Socket connected","socketId":"fHkb4wli_kosQ5_eAAAN"}
+{"timestamp":"2026-01-17T15:57:19.211Z","level":"DEBUG","message":"Socket connected","socketId":"9WoxagL8mO31i1jIAAAP"}
+{"timestamp":"2026-01-17T15:57:20.216Z","level":"DEBUG","message":"Socket connected","socketId":"z81Brcm4JQD8qMHDAAAR"}
+{"timestamp":"2026-01-17T15:57:20.982Z","level":"DEBUG","message":"Socket connected","socketId":"9N2FoCh6FVOwSoeaAAAT"}
+{"timestamp":"2026-01-17T15:57:21.551Z","level":"DEBUG","message":"Socket connected","socketId":"07hifnNQP0F3DZO2AAAV"}
+{"timestamp":"2026-01-17T15:57:33.967Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:34.014Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:42.420Z","level":"INFO","message":"POST /login","status":200,"duration":"54ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:42.434Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:57:42.760Z","level":"DEBUG","message":"Socket connected","socketId":"L0whAmH9R6iMA-YkAAAX"}
+{"timestamp":"2026-01-17T15:57:46.367Z","level":"DEBUG","message":"Socket connected","socketId":"pWXNjh3C9yX-3rS6AAAZ"}
+{"timestamp":"2026-01-17T15:57:48.317Z","level":"DEBUG","message":"Socket connected","socketId":"aGPjcikmqyUjNmzmAAAb"}
+{"timestamp":"2026-01-17T15:57:48.768Z","level":"DEBUG","message":"Socket connected","socketId":"7330uLhydjyuLofRAAAd"}
+{"timestamp":"2026-01-17T15:58:06.877Z","level":"DEBUG","message":"Socket connected","socketId":"1b-x703pM2qtO2gPAAAf"}
+{"timestamp":"2026-01-17T15:58:07.443Z","level":"DEBUG","message":"Socket connected","socketId":"kpF9Z6XVyr7oWoVeAAAh"}
+{"timestamp":"2026-01-17T15:58:08.983Z","level":"DEBUG","message":"Socket connected","socketId":"bnXP_2GtS85TDuBEAAAj"}
+{"timestamp":"2026-01-17T15:58:10.004Z","level":"DEBUG","message":"Socket connected","socketId":"zKYhbGAbkoBBu8lxAAAl"}
+{"timestamp":"2026-01-17T15:58:11.418Z","level":"DEBUG","message":"Socket connected","socketId":"mjyFF5_3WgyHtHcdAAAn"}
+{"timestamp":"2026-01-17T15:58:17.735Z","level":"DEBUG","message":"Socket connected","socketId":"u4PSsKkQ97ZGYQMwAAAp"}
+{"timestamp":"2026-01-17T15:58:18.667Z","level":"DEBUG","message":"Socket connected","socketId":"NcVo4OWUN9gLglXPAAAs"}
+{"timestamp":"2026-01-17T15:58:35.615Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:35.659Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:35.686Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:35.981Z","level":"DEBUG","message":"Socket connected","socketId":"12hckJCKpVxOb8G4AAAu"}
+{"timestamp":"2026-01-17T15:58:38.755Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:38.756Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:38.770Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:58:39.077Z","level":"DEBUG","message":"Socket connected","socketId":"csm95v5_eelpD8uxAAAw"}
+{"timestamp":"2026-01-17T15:59:02.441Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:02.450Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:30.203Z","level":"INFO","message":"POST /setup","status":200,"duration":"49ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:30.208Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:30.535Z","level":"DEBUG","message":"Socket connected","socketId":"eeKD9-rYJpvN8hmRAAAy"}
+{"timestamp":"2026-01-17T15:59:32.596Z","level":"DEBUG","message":"Socket connected","socketId":"3Qtff5Iq7mSrd2SGAAA0"}
+{"timestamp":"2026-01-17T15:59:41.508Z","level":"DEBUG","message":"Socket connected","socketId":"Xb4iuES4d5liWTfCAAA2"}
+{"timestamp":"2026-01-17T15:59:42.059Z","level":"DEBUG","message":"Socket connected","socketId":"jqXbIyvAXMMgo7OoAAA4"}
+{"timestamp":"2026-01-17T15:59:51.401Z","level":"DEBUG","message":"Socket connected","socketId":"6eoEvWoTFFv73Zr1AAA6"}
+{"timestamp":"2026-01-17T15:59:53.507Z","level":"DEBUG","message":"Socket connected","socketId":"grF_R45TznRPG7VZAAA8"}
+{"timestamp":"2026-01-17T15:59:54.149Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:54.150Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:54.152Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:54.457Z","level":"DEBUG","message":"Socket connected","socketId":"wUlE7v_9Xz4msXx0AAA-"}
+{"timestamp":"2026-01-17T15:59:54.903Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:54.904Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:54.905Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T15:59:55.221Z","level":"DEBUG","message":"Socket connected","socketId":"lz0NCsYfnG_h3UFKAABA"}
+{"timestamp":"2026-01-17T15:59:56.258Z","level":"DEBUG","message":"Socket connected","socketId":"9crJK7ep7pBEUzaCAABC"}
+{"timestamp":"2026-01-17T15:59:57.189Z","level":"DEBUG","message":"Socket connected","socketId":"rNTawkYt_Rg_r03_AABE"}
+{"timestamp":"2026-01-17T16:00:30.516Z","level":"DEBUG","message":"Socket connected","socketId":"7OWG8WIK9bUPk9brAABG"}
+{"timestamp":"2026-01-17T16:00:30.932Z","level":"DEBUG","message":"Socket connected","socketId":"kOUaOIEmSr22mpK3AABI"}
+{"timestamp":"2026-01-17T16:02:54.679Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:02:54.689Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:02:54.882Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:02:55.197Z","level":"DEBUG","message":"Socket connected","socketId":"AqO8R1QfxXdRudTbAABK"}
+{"timestamp":"2026-01-17T16:03:02.778Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:03:02.951Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:03:22.947Z","level":"INFO","message":"POST /login","status":200,"duration":"48ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:03:22.955Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:03:23.278Z","level":"DEBUG","message":"Socket connected","socketId":"tYKwju_Dr4I2M7DoAABM"}
+{"timestamp":"2026-01-17T16:03:28.740Z","level":"DEBUG","message":"Socket connected","socketId":"l1Y6s2Kea754MBiTAABO"}
+{"timestamp":"2026-01-17T16:03:31.694Z","level":"DEBUG","message":"Socket connected","socketId":"XMG1hKYVt3XTjh16AABQ"}
+{"timestamp":"2026-01-17T16:03:32.106Z","level":"DEBUG","message":"Socket connected","socketId":"1mcN1FOm8YlfJpi7AABS"}
+{"timestamp":"2026-01-17T16:03:32.498Z","level":"DEBUG","message":"Socket connected","socketId":"frpDzKq2rhKj_luRAABU"}
+{"timestamp":"2026-01-17T16:03:32.987Z","level":"DEBUG","message":"Socket connected","socketId":"eocr6Dn7E9vPzuoSAABW"}
+{"timestamp":"2026-01-17T16:03:40.256Z","level":"DEBUG","message":"Socket connected","socketId":"br8JVI25u1LtcyWdAABY"}
+{"timestamp":"2026-01-17T16:04:56.397Z","level":"INFO","message":"POST /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:04:57.443Z","level":"INFO","message":"POST /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:05:02.490Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:05:02.500Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:05:02.712Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:05:02.815Z","level":"DEBUG","message":"Socket connected","socketId":"Omamw06RuXRfyFXBAABa"}
+{"timestamp":"2026-01-17T16:05:04.291Z","level":"DEBUG","message":"Socket connected","socketId":"X5J66wzXgGEVjUZbAABc"}
+{"timestamp":"2026-01-17T16:05:04.992Z","level":"DEBUG","message":"Socket connected","socketId":"J7u5ZHTVR5oWdPZAAABe"}
+{"timestamp":"2026-01-17T16:07:35.019Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.029Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.038Z","level":"INFO","message":"GET /","status":200,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.049Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.211Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.220Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:35.342Z","level":"DEBUG","message":"Socket connected","socketId":"DEBrLufFyGYb2HShAABg"}
+{"timestamp":"2026-01-17T16:07:35.358Z","level":"DEBUG","message":"Socket connected","socketId":"JEI6-crAaksc-7URAABi"}
+{"timestamp":"2026-01-17T16:07:44.479Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.489Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.499Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.509Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.520Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.529Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:07:44.794Z","level":"DEBUG","message":"Socket connected","socketId":"NL5mWep2bj5SdNCNAABl"}
+{"timestamp":"2026-01-17T16:07:44.795Z","level":"DEBUG","message":"Socket connected","socketId":"M4uytyTjtKeondBaAABm"}
+{"timestamp":"2026-01-17T16:08:07.785Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.029Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.044Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.062Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.073Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.094Z","level":"DEBUG","message":"Socket connected","socketId":"7jfY50P7f_ZKaxD9AABo"}
+{"timestamp":"2026-01-17T16:08:08.297Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:08:08.364Z","level":"DEBUG","message":"Socket connected","socketId":"hsy-rzaxp989bSUZAABq"}
+{"timestamp":"2026-01-17T16:09:05.041Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:05.052Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:05.060Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:05.374Z","level":"DEBUG","message":"Socket connected","socketId":"9BEXb6qAXCTvAxrwAABs"}
+{"timestamp":"2026-01-17T16:09:07.700Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:07.710Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:07.720Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-17T16:09:08.025Z","level":"DEBUG","message":"Socket connected","socketId":"KiCmb69mIW2Kgm3QAABu"}
+{"timestamp":"2026-01-18T05:12:20.075Z","level":"DEBUG","message":"Socket connected","socketId":"nM47MjurpxHbqNTqAABw"}
+{"timestamp":"2026-01-18T05:12:22.546Z","level":"DEBUG","message":"Socket connected","socketId":"CeXjbBltzZ67gRBqAABy"}
+{"timestamp":"2026-01-18T05:12:23.298Z","level":"DEBUG","message":"Socket connected","socketId":"bV6cjOxhKuOTTG1tAAB0"}
+{"timestamp":"2026-01-18T05:12:27.376Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:12:27.386Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:12:27.594Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:12:27.705Z","level":"DEBUG","message":"Socket connected","socketId":"2iJrzZxMcR8C7DV8AAB2"}
+{"timestamp":"2026-01-18T05:12:29.248Z","level":"DEBUG","message":"Socket connected","socketId":"wgiEnrxt1iuGkp5RAAB4"}
+{"timestamp":"2026-01-18T05:12:30.031Z","level":"DEBUG","message":"Socket connected","socketId":"R3cOODdTzVehRdpqAAB6"}
+{"timestamp":"2026-01-18T05:15:31.859Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:15:31.869Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:15:31.879Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:15:31.889Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:15:31.899Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-18T05:15:31.909Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}

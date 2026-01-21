@@ -1,0 +1,33 @@
+{"timestamp":"2026-01-21T13:37:25.454Z","level":"INFO","message":"Starting TalkLink server...","host":"0.0.0.0","port":"3000"}
+{"timestamp":"2026-01-21T13:37:25.460Z","level":"INFO","message":"Server started successfully","http":"http://0.0.0.0:3000","ws":"ws://0.0.0.0:3000","api":"http://0.0.0.0:3000/api"}
+{"timestamp":"2026-01-21T13:37:39.688Z","level":"INFO","message":"POST /setup","status":200,"duration":"58ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:37:39.741Z","level":"INFO","message":"POST /login","status":200,"duration":"49ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:37:39.751Z","level":"INFO","message":"POST /","status":200,"duration":"2ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:37:39.760Z","level":"INFO","message":"GET /invite/DC93DEBD","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:37:39.766Z","level":"INFO","message":"POST /21/join","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:06.019Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:06.073Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:24.623Z","level":"INFO","message":"POST /setup","status":400,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:29.441Z","level":"INFO","message":"POST /login","status":200,"duration":"48ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:29.446Z","level":"INFO","message":"GET /","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:29.766Z","level":"DEBUG","message":"Socket connected","socketId":"-IOtM4Z3GkkxMTfmAAAB"}
+{"timestamp":"2026-01-21T13:38:59.101Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:59.102Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:59.122Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:38:59.427Z","level":"DEBUG","message":"Socket connected","socketId":"wNY-2OQSg7hW-yzZAAAD"}
+{"timestamp":"2026-01-21T13:39:01.339Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:01.340Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:01.352Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:01.655Z","level":"DEBUG","message":"Socket connected","socketId":"AZS-j2JaA3RtuonEAAAF"}
+{"timestamp":"2026-01-21T13:39:07.861Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:07.862Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:07.877Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:39:08.176Z","level":"DEBUG","message":"Socket connected","socketId":"iwuQcPBGnq12jx95AAAH"}
+{"timestamp":"2026-01-21T13:41:02.520Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:02.522Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:02.533Z","level":"INFO","message":"GET /vite.svg","status":200,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:06.243Z","level":"INFO","message":"GET /","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:06.244Z","level":"INFO","message":"GET /","status":304,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:06.258Z","level":"INFO","message":"GET /vite.svg","status":304,"duration":"0ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:25.361Z","level":"INFO","message":"POST /generate","status":400,"duration":"1ms","ip":"127.0.0.1"}
+{"timestamp":"2026-01-21T13:41:25.362Z","level":"ERROR","message":"callback is not a function","stack":"TypeError: callback is not a function\n    at Statement.<anonymous> (/home/fitzz/work/TalkLink/server/db.js:181:5)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)\n    at Statement.replacement (/home/fitzz/work/TalkLink/node_modules/sqlite3/lib/trace.js:25:27)"}
