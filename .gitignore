@@ -8,3 +8,4 @@ data/*.db-journal
 coverage/
 .vscode/
 .obsidian/
+logs/
