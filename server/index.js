@@ -88,6 +88,7 @@ app.use('/api/settings', settingsRoutes);
 app.use('/api/email', emailRoutes);
 app.use('/api/proposal', proposalRoutes);
 app.use('/api/assistant', require('./routes/assistant'));
+app.use('/api/integrations', require('./routes/integrations'));
 
 // SPA 라우트
 app.get('*', (req, res) => {
@@ -115,6 +116,10 @@ io.use((socket, next) => {
 
 require('./socket/auth')(io);
 require('./socket/chatHandler')(io);
+
+// Initialize Discord Bots
+const DiscordBotService = require('./services/discordBot');
+DiscordBotService.init(io);
 
 const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';

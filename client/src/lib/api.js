@@ -118,3 +118,10 @@ export const assistant = {
   analyze: (text, roomId) => apiPost('/assistant/analyze', { text, room_id: roomId }),
   search: (query, roomId) => apiPost('/assistant/search', { query, room_id: roomId })
 };
+
+// Integration APIs
+export const integrations = {
+  getDiscord: (roomId) => apiGet(`/integrations/${roomId}/integration`),
+  updateDiscord: (roomId, { botToken, channelId, isActive }) =>
+    apiPost(`/integrations/${roomId}/integration`, { botToken, channelId, isActive })
+};

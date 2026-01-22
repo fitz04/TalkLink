@@ -124,6 +124,18 @@ db.serialize(() => {
     )
   `);
 
+  db.run(`
+    CREATE TABLE IF NOT EXISTS discord_integrations (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      room_id INTEGER NOT NULL REFERENCES chat_rooms(id) ON DELETE CASCADE,
+      bot_token TEXT NOT NULL,
+      channel_id TEXT NOT NULL,
+      is_active BOOLEAN DEFAULT 1,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+      UNIQUE(room_id)
+    )
+  `);
+
   db.run(`CREATE INDEX IF NOT EXISTS idx_messages_room_id ON messages(room_id)`);
   db.run(`CREATE INDEX IF NOT EXISTS idx_messages_created_at ON messages(created_at)`);
   db.run(`CREATE INDEX IF NOT EXISTS idx_messages_sender ON messages(sender_type, sender_id)`);
@@ -386,6 +398,27 @@ db.saveProposalHistory = function (roomIds, instructions, proposal, callback) {
 
 db.getProposalHistory = function (callback) {
   this.all('SELECT * FROM proposal_history ORDER BY created_at DESC LIMIT 20', callback);
+};
+
+// Discord Integration Methods
+db.getDiscordIntegration = function (roomId, callback) {
+  this.get('SELECT * FROM discord_integrations WHERE room_id = ?', [roomId], callback);
+};
+
+db.getAllActiveDiscordIntegrations = function (callback) {
+  this.all('SELECT * FROM discord_integrations WHERE is_active = 1', callback);
+};
+
+db.saveDiscordIntegration = function (roomId, botToken, channelId, callback) {
+  this.run(
+    'INSERT OR REPLACE INTO discord_integrations (room_id, bot_token, channel_id, is_active) VALUES (?, ?, ?, 1)',
+    [roomId, botToken, channelId],
+    callback
+  );
+};
+
+db.deleteDiscordIntegration = function (roomId, callback) {
+  this.run('DELETE FROM discord_integrations WHERE room_id = ?', [roomId], callback);
 };
 
 console.log('✅ Database initialized successfully');

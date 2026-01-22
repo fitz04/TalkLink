@@ -37,16 +37,17 @@ export default function MessageBubble({ message, isOwn }) {
     <div className={`flex ${isOwn ? 'justify-end' : 'justify-start'} message-enter`}>
       <div className={`max-w-[70%] ${isOwn ? 'order-2' : ''}`}>
         {!isOwn && (
-          <p className="text-xs text-slate-400 mb-1 ml-1">
-            {message.nickname || (message.sender_type === 'host' ? '호스트' : '게스트')}
+          <p className="text-xs text-slate-400 mb-1 ml-1 flex items-center gap-1">
+            {message.sender_type === 'discord' && <span className="text-[#5865F2] font-bold">Discord</span>}
+            <span>{message.senderName || message.nickname || (message.sender_type === 'host' ? '호스트' : '게스트')}</span>
           </p>
         )}
 
         <div className={`rounded-2xl ${isOwn
-            ? 'bg-blue-600 rounded-br-md'
-            : 'bg-slate-700 rounded-bl-md'
+          ? 'bg-blue-600 rounded-br-md'
+          : 'bg-slate-700 rounded-bl-md'
           }`}>
-          {message.sender_type === 'guest' && (
+          {(message.sender_type === 'guest' || message.sender_type === 'discord') && (
             <div className="px-4 pt-3 pb-1">
               <p className="text-sm leading-relaxed">{message.original_text}</p>
             </div>

@@ -3,7 +3,7 @@ import { AppContext } from '../../App';
 import { MessageCircle, Mail, FileText, Settings, LogOut, Plus } from 'lucide-react';
 
 export default function Sidebar() {
-  const { user, rooms, setRooms, currentRoom, handleSelectRoom, handleLogout, currentMode, setCurrentMode } = useContext(AppContext);
+  const { user, rooms, setRooms, currentRoom, handleSelectRoom, handleLogout, currentMode, setCurrentMode, handleOpenSettings, settingsOpen } = useContext(AppContext);
   const [showModal, setShowModal] = useState(false);
   const [newRoomName, setNewRoomName] = useState('');
   const [isCreating, setIsCreating] = useState(false);
@@ -93,8 +93,8 @@ export default function Sidebar() {
               제안서
             </button>
             <button
-              onClick={() => navigateTo('settings')}
-              className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${currentMode === 'settings'
+              onClick={handleOpenSettings}
+              className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${settingsOpen
                 ? 'bg-blue-600 text-white'
                 : 'hover:bg-slate-700/50 text-slate-400'
                 }`}

@@ -1,35 +1,65 @@
 import { useState, useContext } from 'react';
 import { AppContext } from '../../App';
-import { Settings, Key, Eye, EyeOff, CheckCircle, AlertCircle } from 'lucide-react';
+import { Settings, Lock, Eye, EyeOff, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function SettingsPanel() {
   const { handleCloseSettings } = useContext(AppContext);
   const [openrouterKey, setOpenrouterKey] = useState('');
   const [tavilyKey, setTavilyKey] = useState('');
   const [exaKey, setExaKey] = useState('');
+  const [selectedModel, setSelectedModel] = useState('openai/gpt-4o-mini');
   const [showKeys, setShowKeys] = useState({ openrouter: false, tavily: false, exa: false });
   const [saving, setSaving] = useState('');
   const [message, setMessage] = useState(null);
 
+  // 초기 설정 로드
+  useState(() => {
+    fetch('/api/settings')
+      .then(res => res.json())
+      .then(data => {
+        if (data.settings?.openrouter_model) {
+          setSelectedModel(data.settings.openrouter_model);
+        }
+      })
+      .catch(console.error);
+  }, []);
+
+  const handleSaveSetting = async (key, value) => {
+    try {
+      const res = await fetch('/api/settings', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key, value })
+      });
+
+      if (!res.ok) throw new Error('설정 저장 실패');
+
+      setMessage({ type: 'success', text: '설정이 저장되었습니다' });
+      setTimeout(() => setMessage(null), 3000);
+    } catch (err) {
+      setMessage({ type: 'error', text: err.message });
+    }
+  };
+
   const handleSaveKey = async (provider, key) => {
     if (!key.trim()) return;
-    
+
     setSaving(provider);
     setMessage(null);
-    
+
     try {
       const res = await fetch('/api/settings/api-key', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ provider, apiKey: key })
       });
-      
+
       const data = await res.json();
-      
+
       if (!res.ok) {
         throw new Error(data.error || '저장에 실패했습니다');
       }
-      
+
       setMessage({ type: 'success', text: `${provider.toUpperCase()} API 키가 저장되었습니다` });
       setTimeout(() => setMessage(null), 3000);
     } catch (err) {
@@ -56,9 +86,8 @@ export default function SettingsPanel() {
         </div>
 
         {message && (
-          <div className={`mb-4 p-3 rounded-lg flex items-center gap-2 ${
-            message.type === 'success' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
-          }`}>
+          <div className={`mb-4 p-3 rounded-lg flex items-center gap-2 ${message.type === 'success' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
+            }`}>
             {message.type === 'success' ? <CheckCircle size={18} /> : <AlertCircle size={18} />}
             {message.text}
           </div>
@@ -67,10 +96,10 @@ export default function SettingsPanel() {
         <div className="space-y-6">
           <div>
             <h3 className="text-sm font-medium text-slate-400 mb-3 flex items-center gap-2">
-              <Key size={16} />
+              <Lock size={16} />
               API Keys
             </h3>
-            
+
             <div className="space-y-4">
               <div className="p-4 bg-slate-700/50 rounded-lg">
                 <div className="flex items-center justify-between mb-2">
@@ -80,9 +109,9 @@ export default function SettingsPanel() {
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 mb-3">
-                  https://openrouter.ai에서获取
+                  https://openrouter.ai 에서 확인
                 </p>
-                <div className="flex gap-2">
+                <div className="flex gap-2 mb-3">
                   <div className="flex-1 relative">
                     <input
                       type={showKeys.openrouter ? 'text' : 'password'}
@@ -107,6 +136,29 @@ export default function SettingsPanel() {
                     {saving === 'openrouter' ? '저장 중...' : '저장'}
                   </button>
                 </div>
+
+                <div className="border-t border-slate-600 pt-3">
+                  <label className="block text-sm font-medium mb-2 text-slate-300">사용 모델 (Model)</label>
+                  <div className="flex gap-2">
+                    <select
+                      value={selectedModel}
+                      onChange={(e) => setSelectedModel(e.target.value)}
+                      className="flex-1 px-3 py-2 rounded-lg bg-slate-600 border border-slate-500 focus:outline-none focus:border-blue-500 text-sm"
+                    >
+                      <option value="openai/gpt-4o-mini">GPT-4o Mini (빠름/저렴)</option>
+                      <option value="google/gemini-2.0-flash-001">Gemini 2.0 Flash (균형)</option>
+                      <option value="anthropic/claude-3-haiku">Claude 3 Haiku (자연스러움)</option>
+                      <option value="openai/gpt-4o">GPT-4o (고성능)</option>
+                      <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet (최고 성능)</option>
+                    </select>
+                    <button
+                      onClick={() => handleSaveSetting('openrouter_model', selectedModel)}
+                      className="px-4 py-2 bg-slate-600 hover:bg-slate-500 rounded-lg text-sm"
+                    >
+                      모델 저장
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <div className="p-4 bg-slate-700/50 rounded-lg">
@@ -117,7 +169,7 @@ export default function SettingsPanel() {
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 mb-3">
-                  https://tavily.com에서获取
+                  https://tavily.com 에서 확인
                 </p>
                 <div className="flex gap-2">
                   <div className="flex-1 relative">
@@ -154,7 +206,7 @@ export default function SettingsPanel() {
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 mb-3">
-                  https://exa.ai에서获取
+                  https://exa.ai 에서 확인
                 </p>
                 <div className="flex gap-2">
                   <div className="flex-1 relative">
@@ -188,11 +240,9 @@ export default function SettingsPanel() {
           <div className="pt-4 border-t border-slate-700">
             <h3 className="text-sm font-medium text-slate-400 mb-3">상태</h3>
             <div className="grid grid-cols-3 gap-2">
-              <div className={`p-3 rounded-lg text-center ${
-                apiKeysConfigured ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'
-              }`}>
+              <div className="p-3 rounded-lg text-center bg-slate-700/50 text-slate-400">
                 <p className="text-xs">번역</p>
-                <p className="font-medium">{apiKeysConfigured ? '활성' : '미설정'}</p>
+                <p className="font-medium">설정 중...</p>
               </div>
               <div className="p-3 rounded-lg text-center bg-slate-700/50 text-slate-400">
                 <p className="text-xs">웹 검색</p>

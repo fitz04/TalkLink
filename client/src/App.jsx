@@ -7,6 +7,7 @@ import EmailMode from './components/Email/EmailMode';
 import ProposalMode from './components/Proposal/ProposalMode';
 import SettingsPanel from './components/Settings/SettingsPanel';
 import AssistantPanel from './components/Chat/AssistantPanel';
+import IntegrationSettings from './components/Chat/IntegrationSettings';
 import { useSocket } from './hooks/useSocket';
 
 export const AppContext = createContext(null);
@@ -21,6 +22,7 @@ function App() {
   const [currentMode, setCurrentMode] = useState('chat'); // 'chat', 'email', 'proposal'
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [assistantOpen, setAssistantOpen] = useState(false);
+  const [integrationSettingsOpen, setIntegrationSettingsOpen] = useState(false);
 
   useEffect(() => {
     const savedUser = localStorage.getItem('talklink_user');
@@ -32,6 +34,19 @@ function App() {
       setIsGuest(true);
       setParticipant(savedParticipant);
       setUser({ name: savedParticipant.nickname });
+
+      // 게스트인 경우 저장된 방 정보로 바로 입장
+      const savedRoomId = localStorage.getItem('talklink_room_id');
+      if (savedRoomId) {
+        fetch(`/api/rooms/${savedRoomId}`)
+          .then(res => res.json())
+          .then(data => {
+            if (data.room) {
+              setCurrentRoom(data.room);
+            }
+          })
+          .catch(console.error);
+      }
     } else if (savedUser && savedToken) {
       setUser(JSON.parse(savedUser));
     }
@@ -117,6 +132,14 @@ function App() {
     setAssistantOpen(false);
   };
 
+  const handleOpenIntegrationSettings = () => {
+    setIntegrationSettingsOpen(true);
+  };
+
+  const handleCloseIntegrationSettings = () => {
+    setIntegrationSettingsOpen(false);
+  };
+
   if (!user) {
     return <Login onLogin={handleLogin} />;
   }
@@ -143,7 +166,10 @@ function App() {
       handleOpenSettings,
       handleCloseSettings,
       handleOpenAssistant,
-      handleCloseAssistant
+      handleCloseAssistant,
+      integrationSettingsOpen,
+      handleOpenIntegrationSettings,
+      handleCloseIntegrationSettings
     }}>
       <div className="flex h-screen bg-slate-900">
         {!isGuest && <Sidebar />}
@@ -174,6 +200,13 @@ function App() {
           </div>
         </div>
         {settingsOpen && <SettingsPanel />}
+        {integrationSettingsOpen && currentRoom && (
+          <IntegrationSettings
+            isOpen={integrationSettingsOpen}
+            onClose={handleCloseIntegrationSettings}
+            roomId={currentRoom.id}
+          />
+        )}
       </div>
     </AppContext.Provider>
   );
