@@ -9,10 +9,11 @@ import SettingsPanel from './components/Settings/SettingsPanel';
 import AssistantPanel from './components/Chat/AssistantPanel';
 import IntegrationSettings from './components/Chat/IntegrationSettings';
 import { useSocket } from './hooks/useSocket';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 
 export const AppContext = createContext(null);
 
-function App() {
+function AppContent() {
   const [user, setUser] = useState(null);
   const [currentRoom, setCurrentRoom] = useState(null);
   const [isGuest, setIsGuest] = useState(false);
@@ -23,6 +24,7 @@ function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [assistantOpen, setAssistantOpen] = useState(false);
   const [integrationSettingsOpen, setIntegrationSettingsOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const savedUser = localStorage.getItem('talklink_user');
@@ -192,8 +194,8 @@ function App() {
             ) : (
               <div className="flex-1 flex items-center justify-center text-slate-400">
                 <div className="text-center">
-                  <h2 className="text-2xl font-semibold mb-2">TalkLink에 오신 것을 환영합니다</h2>
-                  <p>채팅방을 선택하거나 새 채팅방을 만들어보세요</p>
+                  <h2 className="text-2xl font-semibold mb-2">TalkLink</h2>
+                  <p>{t('newChat')}</p>
                 </div>
               </div>
             )}
@@ -209,6 +211,14 @@ function App() {
         )}
       </div>
     </AppContext.Provider>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

@@ -1,9 +1,11 @@
-import { useState, useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AppContext } from '../../App';
-import { Settings, Lock, Eye, EyeOff, CheckCircle, AlertCircle } from 'lucide-react';
+import { Settings, Lock, Eye, EyeOff, CheckCircle, AlertCircle, Globe } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export default function SettingsPanel() {
   const { handleCloseSettings } = useContext(AppContext);
+  const { language, changeLanguage, t } = useLanguage();
   const [openrouterKey, setOpenrouterKey] = useState('');
   const [tavilyKey, setTavilyKey] = useState('');
   const [exaKey, setExaKey] = useState('');
@@ -32,9 +34,9 @@ export default function SettingsPanel() {
         body: JSON.stringify({ key, value })
       });
 
-      if (!res.ok) throw new Error('설정 저장 실패');
+      if (!res.ok) throw new Error(t('error'));
 
-      setMessage({ type: 'success', text: '설정이 저장되었습니다' });
+      setMessage({ type: 'success', text: t('saved') });
       setTimeout(() => setMessage(null), 3000);
     } catch (err) {
       setMessage({ type: 'error', text: err.message });
@@ -57,10 +59,10 @@ export default function SettingsPanel() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || '저장에 실패했습니다');
+        throw new Error(data.error || t('error'));
       }
 
-      setMessage({ type: 'success', text: `${provider.toUpperCase()} API 키가 저장되었습니다` });
+      setMessage({ type: 'success', text: `${provider.toUpperCase()} API Key ${t('saved')}` });
       setTimeout(() => setMessage(null), 3000);
     } catch (err) {
       setMessage({ type: 'error', text: err.message });
@@ -75,13 +77,13 @@ export default function SettingsPanel() {
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-semibold flex items-center gap-2">
             <Settings size={20} />
-            설정
+            {t('settingsTitle')}
           </h2>
           <button
             onClick={handleCloseSettings}
             className="text-slate-400 hover:text-slate-300"
           >
-            닫기
+            x
           </button>
         </div>
 
@@ -94,10 +96,34 @@ export default function SettingsPanel() {
         )}
 
         <div className="space-y-6">
+          {/* Language Selection */}
+          <div className="p-4 bg-slate-700/50 rounded-lg">
+            <div className="flex items-center justify-between mb-2">
+              <label className="font-medium flex items-center gap-2">
+                <Globe size={16} />
+                {t('language')}
+              </label>
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => changeLanguage('en')}
+                className={`flex-1 py-2 px-3 rounded-lg text-sm transition-colors ${language === 'en' ? 'bg-blue-600 text-white' : 'bg-slate-600 text-slate-300 hover:bg-slate-500'}`}
+              >
+                English
+              </button>
+              <button
+                onClick={() => changeLanguage('ko')}
+                className={`flex-1 py-2 px-3 rounded-lg text-sm transition-colors ${language === 'ko' ? 'bg-blue-600 text-white' : 'bg-slate-600 text-slate-300 hover:bg-slate-500'}`}
+              >
+                한국어
+              </button>
+            </div>
+          </div>
+
           <div>
             <h3 className="text-sm font-medium text-slate-400 mb-3 flex items-center gap-2">
               <Lock size={16} />
-              API Keys
+              {t('apiKey')}
             </h3>
 
             <div className="space-y-4">
@@ -105,7 +131,7 @@ export default function SettingsPanel() {
                 <div className="flex items-center justify-between mb-2">
                   <label className="font-medium">OpenRouter API Key</label>
                   <span className="text-xs text-blue-400 bg-blue-400/10 px-2 py-1 rounded">
-                    번역 필수
+                    Required
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 mb-3">
@@ -133,29 +159,29 @@ export default function SettingsPanel() {
                     disabled={saving === 'openrouter' || !openrouterKey.trim()}
                     className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg text-sm"
                   >
-                    {saving === 'openrouter' ? '저장 중...' : '저장'}
+                    {saving === 'openrouter' ? 'Saving...' : t('save')}
                   </button>
                 </div>
 
                 <div className="border-t border-slate-600 pt-3">
-                  <label className="block text-sm font-medium mb-2 text-slate-300">사용 모델 (Model)</label>
+                  <label className="block text-sm font-medium mb-2 text-slate-300">{t('model')}</label>
                   <div className="flex gap-2">
                     <select
                       value={selectedModel}
                       onChange={(e) => setSelectedModel(e.target.value)}
                       className="flex-1 px-3 py-2 rounded-lg bg-slate-600 border border-slate-500 focus:outline-none focus:border-blue-500 text-sm"
                     >
-                      <option value="openai/gpt-4o-mini">GPT-4o Mini (빠름/저렴)</option>
-                      <option value="google/gemini-2.0-flash-001">Gemini 2.0 Flash (균형)</option>
-                      <option value="anthropic/claude-3-haiku">Claude 3 Haiku (자연스러움)</option>
-                      <option value="openai/gpt-4o">GPT-4o (고성능)</option>
-                      <option value="anthropic/claude-3.5-sonnet">Claude 3.5 Sonnet (최고 성능)</option>
+                      <option value="openai/gpt-4o-mini">{t('openai/gpt-4o-mini')}</option>
+                      <option value="google/gemini-2.0-flash-001">{t('google/gemini-2.0-flash-001')}</option>
+                      <option value="anthropic/claude-3-haiku">{t('anthropic/claude-3-haiku')}</option>
+                      <option value="openai/gpt-4o">{t('openai/gpt-4o')}</option>
+                      <option value="anthropic/claude-3.5-sonnet">{t('anthropic/claude-3.5-sonnet')}</option>
                     </select>
                     <button
                       onClick={() => handleSaveSetting('openrouter_model', selectedModel)}
                       className="px-4 py-2 bg-slate-600 hover:bg-slate-500 rounded-lg text-sm"
                     >
-                      모델 저장
+                      {t('save')}
                     </button>
                   </div>
                 </div>
@@ -165,7 +191,7 @@ export default function SettingsPanel() {
                 <div className="flex items-center justify-between mb-2">
                   <label className="font-medium">Tavily API Key</label>
                   <span className="text-xs text-amber-400 bg-amber-400/10 px-2 py-1 rounded">
-                    웹 검색 (선택)
+                    Optional (Search)
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 mb-3">
@@ -193,7 +219,7 @@ export default function SettingsPanel() {
                     disabled={saving === 'tavily' || !tavilyKey.trim()}
                     className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg text-sm"
                   >
-                    {saving === 'tavily' ? '저장 중...' : '저장'}
+                    {saving === 'tavily' ? 'Saving...' : t('save')}
                   </button>
                 </div>
               </div>
