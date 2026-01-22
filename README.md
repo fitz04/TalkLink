@@ -15,8 +15,6 @@ Socket.io를 활용한 실시간 통신과 AI 기반 번역 기술을 결합하�
 
 ---
 
-![TalkLink Screenshot](docs/talklink_discord.png)
-
 ## 📋 목차
 
 - [주요 기능](#-주요-기능-key-features)
@@ -49,7 +47,7 @@ Socket.io를 활용한 실시간 통신과 AI 기반 번역 기술을 결합하�
 
 ## 📸 스크린샷 (Screenshots)
 
-> 스크린샷은 추후 추가 예정입니다.
+![TalkLink Screenshot](docs/talklink_discord.png)
 
 ---
 
